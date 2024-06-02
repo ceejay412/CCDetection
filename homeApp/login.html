@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <!-- External JavaScript library (jQuery) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <section class="login-page">
+    <div class="form">
+      <h3>LOGIN TO YOUR ACCOUNT</h3>
+      <form class="login-form" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Username"/>
+        <input type="password" name="password" placeholder="Password"/>
+        <button type="submit">Login</button>
+      </form>
+      <br>
+      <p style="color: red;">{{ error }}</p>
+    </div>
+  </section>
+
+  <!-- Inline CSS -->
+  <style>
+
+  </style>
+
+  <!-- Inline JavaScript -->
+  <script>
+    $(document).ready(function() {
+      $('.message a').click(function() {
+        $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+      });
+    });
+  </script>
+</body>
+</html>
