@@ -5,26 +5,29 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Your Website Title</title>
+  <title>{% block title %}{% endblock %}</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
+
+  <!-- Favicons -->
+  <link href="{% static 'static/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="{% static 'static/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'static/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet" />
+  <link href="{% static 'static/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'static/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{% static 'static/assets/css/style.css' %}">
 
   <!-- Custom CSS Files -->
-  <link href="assets/css/select2.min.css" rel="stylesheet" />
-  <link href="assets/css/jquery.dataTables.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/w3.css" />
+  <link href="{% static 'static/assets/css/select2.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'static/assets/css/jquery.dataTables.min.css' %}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'static/assets/css/w3.css' %}" />
 </head>
 
   <body>
@@ -127,16 +130,16 @@
     ></a>
 
     <!-- Vendor JS Files -->
-    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
-    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'static/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'static/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'static/assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'static/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
-    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'assets/js/scripts.js' %}"></script>
-    <script src="{% static 'assets/js/fstdropdown.js' %}"></script>
+    <script src="{% static 'static/assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'static/assets/js/scripts.js' %}"></script>
+    <script src="{% static 'static/assets/js/fstdropdown.js' %}"></script>
     <!-- Template Main JS File -->
-    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'static/assets/js/main.js' %}"></script>
   </body>
 </html>
